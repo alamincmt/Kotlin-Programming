@@ -52,19 +52,26 @@ fun main(args: Array<String>){
         println(item)
     }*/
 
-    fun describe(obj: Any): String =
+    /*fun describe(obj: Any): String =
         when (obj) {
             1       -> "One"
             "Hello" -> "Greetings"
             is Long    -> "Long"
             !is String -> "Not a string"
             else       -> "Unknown"
-        }
+    }
 
     println(describe(1))
     println(describe("Hello"))
     println(describe(5454545454545))
-    println(describe(3))
+    println(describe(3))*/
+
+    // Creating basic classes and their instances
+    val rectangle = Rectangle(5.0, 2.0)
+    val triangle = Triangle(3.0,  4.0, 5.0)
+
+    println( "Area of rectangle is ${rectangle.calculateArea()}, its perimiter is ${rectangle.perimiter}")
+    println("Area of a triangle is ${triangle.calculateArea()}, its perimiter is ${triangle.perimiter}")
 
 }
 
